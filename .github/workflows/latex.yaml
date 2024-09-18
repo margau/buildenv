@@ -2,6 +2,8 @@ name: Latex Buildenv
 
 on:
   push:
+  schedule:
+    - cron: '33 5 * * 1' # run once per week
 
 env:
   REGISTRY: ghcr.io
